@@ -68,14 +68,28 @@
 
 // ---------------------------------Task 5----------------------------------
 
-let number = parseInt(prompt("Hi! Enter a number, please ;)"));
-let lastDigit = number % 10;
+// let number = parseInt(prompt("Hi! Enter a number, please ;)"));
+// let lastDigit = number % 10;
 
-if(lastDigit % 2 == 0)
+// if(lastDigit % 2 == 0)
+// {
+//     document.write("You've entered an even number and the last digit is: " + lastDigit);
+// }
+// else
+// {
+//     document.write("You've entered an odd number and the last digit is: " + lastDigit);
+// }
+
+
+// ---------------------------------Task 6----------------------------------
+
+let number = parseInt(prompt("Hi! Enter a random number, please!"));
+
+if( number >= 0 && number <= 500)
 {
-    document.write("You've entered an even number and the last digit is: " + lastDigit);
+    document.write("Your number is in the range between 0 and 500!");
 }
 else
 {
-    document.write("You've entered an odd number and the last digit is: " + lastDigit);
+    document.write("Your number isn't in the range between 0 and 500 ;(");
 }
