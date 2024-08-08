@@ -51,3 +51,16 @@
 // else{
 //     document.write("The last digit is greater than the first digit!");
 // }
+
+
+
+// ---------------------------------Task 4----------------------------------
+
+let number = parseInt(prompt("Hello! Enter a number!"));
+
+if(number % 2 == 0){
+    document.write("You've entered an even number!");
+}
+else{
+    document.write("You've entered an odd number!");
+}
