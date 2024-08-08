@@ -32,22 +32,3 @@
 // else{
 //     document.write(secondNumber + " is greater than " + firstNumber);
 // }
-
-
-// ---------------------------------Task 3----------------------------------
-
-let number = prompt ("Hi! Enter a number which consists of 2 digits!");
-let firstDigit, lastDigit;
-
-lastDigit = number % 10;
-number -= lastDigit;
-number /=10;
-firstDigit = number;
-
-if(firstDigit > lastDigit)
-{
-    document.write("The first digit is greater than the last digit!");
-}
-else{
-    document.write("The last digit is greater than the first digit!");
-}
