@@ -83,13 +83,57 @@
 
 // ---------------------------------Task 6----------------------------------
 
-let number = parseInt(prompt("Hi! Enter a random number, please!"));
+// let number = parseInt(prompt("Hi! Enter a random number, please!"));
 
-if( number >= 0 && number <= 500)
+// if( number >= 0 && number <= 500)
+// {
+//     document.write("Your number is in the range between 0 and 500!");
+// }
+// else
+// {
+//     document.write("Your number isn't in the range between 0 and 500 ;(");
+// }
+
+
+
+// -----------------------------HOMEWORK------------------------------
+
+// ---------------------------------Task 1----------------------------------
+
+// let userName = prompt("Hi! What is your name?");
+
+// alert(`Hello, ${userName}! How are you?`);
+
+
+// ---------------------------------Task 2----------------------------------
+
+let number = parseInt(prompt("Hi! Enter a number which consists of 3 digits, please!"));
+
+let firstDigit, secondDigit, thirdDigit;
+
+thirdDigit = number % 10;
+console.log(thirdDigit);
+
+number -= thirdDigit;
+number /=10;
+secondDigit = number % 10;
+console.log(secondDigit);
+
+
+number -=secondDigit;
+number /=10;
+firstDigit = number % 10;
+console.log(firstDigit);
+
+if(firstDigit == secondDigit && firstDigit == thirdDigit && secondDigit == thirdDigit)
 {
-    document.write("Your number is in the range between 0 and 500!");
+    alert("It`s true! All the digits are the same!");
+}
+else if(firstDigit == secondDigit || firstDigit==thirdDigit || secondDigit == thirdDigit)
+{
+    alert("There are the same digits in your number!");
 }
 else
 {
-    document.write("Your number isn't in the range between 0 and 500 ;(");
+    alert("There aren't the same digits in your number!");
 }
