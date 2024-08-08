@@ -56,11 +56,26 @@
 
 // ---------------------------------Task 4----------------------------------
 
-let number = parseInt(prompt("Hello! Enter a number!"));
+// let number = parseInt(prompt("Hello! Enter a number!"));
 
-if(number % 2 == 0){
-    document.write("You've entered an even number!");
+// if(number % 2 == 0){
+//     document.write("You've entered an even number!");
+// }
+// else{
+//     document.write("You've entered an odd number!");
+// }
+
+
+// ---------------------------------Task 5----------------------------------
+
+let number = parseInt(prompt("Hi! Enter a number, please ;)"));
+let lastDigit = number % 10;
+
+if(lastDigit % 2 == 0)
+{
+    document.write("You've entered an even number and the last digit is: " + lastDigit);
 }
-else{
-    document.write("You've entered an odd number!");
+else
+{
+    document.write("You've entered an odd number and the last digit is: " + lastDigit);
 }
